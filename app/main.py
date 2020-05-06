@@ -63,7 +63,8 @@ class Metrics:
     def start_metrics(self):
         print("Processing started")
         self.kinesis_stream.pprint()
-        self.kinesis_stream.map(lambda x: json).foreachRDD(self.process)
+        rdd_from_stream = self.kinesis_stream.map(lambda x: json.loads(x))
+        rdd_from_stream.foreachRDD(lambda rdd: self.process(rdd))
 
 
 def parse():
@@ -100,8 +101,8 @@ def main():
 
     conf = SparkConf()
     conf.set("streaming.receiver.writeAheadLog.enabled", "true")
-    # conf.set("park.dynamicAllocation.enabled", "true")
-    # conf.set("spark.python.profile", "true")
+    conf.set("park.dynamicAllocation.enabled", "true")
+    conf.set("spark.python.profile", "true")
     # conf.setMaster("local[*]")
     print("Conf has been set")
 
