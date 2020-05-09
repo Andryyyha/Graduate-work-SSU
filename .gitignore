@@ -2,3 +2,5 @@
 *.terraform
 *__pycache__
 .idea
+/keys
+/credentials.csv
