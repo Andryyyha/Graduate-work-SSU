@@ -1,7 +1,61 @@
 # Created by .ignore support plugin (hsz.mobi)
-*.terraform
+#*.terraform
 *__pycache__
 .idea
 /keys
 /credentials.csv
 */terraform.tfstate
+*/terraform.tfstate.backup
+/venv/
+*.terraform.tfstate.lock.info
+/smtp.csv
+/json_creds.json
+/smtp.json
+/aws/airflow-master/args.json
+*/.terraform
+/kubectl-logs
+/generator/data/
+/kubectl-logs.copy
+app/converter.py
+aws/airflow-master/.terraform/
+aws/airflow-master/prod_aws_extras.json
+aws/eks/.terraform/
+aws/eks/auth.yml
+aws/eks/terraform.tfstate
+aws/eks/terraform.tfstate.backup
+Would skip repository aws/emr/.terraform/modules/prod_etl_cluster.label
+Would skip repository aws/emr/.terraform/modules/data_and_other.default_label
+Would skip repository aws/emr/.terraform/modules/data_and_other.dns_master
+Would skip repository aws/emr/.terraform/modules/prod_etl_cluster.dns_master
+Would skip repository aws/emr/.terraform/modules/data_and_other.label
+aws/emr/.terraform/modules/data_and_other.label_ec2
+aws/emr/.terraform/modules/prod_etl_cluster.label_core
+aws/emr/.terraform/modules/data_and_other.label_task
+aws/emr/.terraform/modules/data_and_other.label_slave
+aws/emr/.terraform/modules/prod_etl_cluster.label_master_managed
+aws/emr/.terraform/modules/prod_etl_cluster.label_slave_managed
+aws/emr/.terraform/modules/prod_etl_cluster.label_emr
+aws/emr/.terraform/modules/data_and_other.label_master_managed
+aws/emr/.terraform/modules/prod_etl_cluster
+aws/emr/.terraform/modules/prod_etl_cluster.label_master
+aws/emr/.terraform/modules/data_and_other.label_core
+aws/emr/.terraform/modules/prod_etl_cluster.label_task
+aws/emr/.terraform/modules/data_and_other
+aws/emr/.terraform/modules/data_and_other.label_slave_managed
+aws/emr/.terraform/modules/prod_etl_cluster.label_ec2
+aws/emr/.terraform/modules/prod_etl_cluster.label_slave
+aws/emr/.terraform/modules/modules.json
+aws/emr/.terraform/modules/data_and_other.label_master
+aws/emr/.terraform/modules/data_and_other.label_emr
+aws/emr/.terraform/modules/prod_etl_cluster.label_service_managed
+aws/emr/.terraform/modules/data_and_other.label_ec2_autoscaling
+aws/emr/.terraform/modules/data_and_other.label_service_managed
+aws/emr/.terraform/modules/prod_etl_cluster.label_ec2_autoscaling
+aws/example-server/.terraform/
+aws/example-server/terraform.tfstate
+aws/nfs/.terraform/
+aws/nfs/terraform.tfstate
+aws/rds/.terraform/
+aws/rds/terraform.tfstate
+aws/rds/terraform.tfstate.backup
+dags/etl-copy.py
